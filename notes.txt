@@ -30,3 +30,5 @@ props:
 delta : time difference between current frame and last frame
 
 //ANCHOR interactions
+three js drei package is like a utitliy that helps to interact with objects
+
