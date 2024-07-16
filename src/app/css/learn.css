@@ -1,0 +1,7 @@
+.scrollSnapYMandatory {
+    scroll-snap-type: y mandatory;
+}
+
+.scrollSnapAlignCenter {
+    scroll-snap-align: start;
+}

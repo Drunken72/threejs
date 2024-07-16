@@ -1,0 +1,32 @@
+//ANCHOR mesh  
+fundamental building block for rendering a 3d object
+
+//ANCHOR - geometry
+
+differnt types of shapes provided by threejs
+
+
+// ANCHOR - standard materials
+
+
+//ANCHOR - directional light
+as name says
+
+props:
+
+position: position of lighting
+intensity: power of lighting 
+
+//ANCHOR ambient light 
+ global lighting spread across like sun - 
+
+props:
+intensity
+
+//ANCHOR useframe 
+for animation
+
+props:
+delta : time difference between current frame and last frame
+
+//ANCHOR interactions
