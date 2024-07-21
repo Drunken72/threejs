@@ -1,3 +1,4 @@
+import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 
@@ -17,7 +18,7 @@ const Globe = ({ size, position, color, scrollPosition }) => {
         // Calculate the x position based on scroll position
         const initialX = position[0];
         const scrollMultiplier = 1; // Adjust multiplier for desired speed
-        const sphereX = initialX + scrollPosition * state.viewport.width * scrollMultiplier;
+        const sphereX = initialX + scrollPosition * (state.viewport.width) * scrollMultiplier;
 
         ref.current.position.x = sphereX;
     });
@@ -33,7 +34,8 @@ const Globe = ({ size, position, color, scrollPosition }) => {
             scale={isClicked ? 1.5 : 1}
         >
             <sphereGeometry args={size} />
-            <meshStandardMaterial color={isHovered ? "black" : color} wireframe />
+            <meshStandardMaterial color={isHovered ? "white" : color} wireframe />
+            <OrbitControls enableZoom={false} />
         </mesh>
     );
 };
